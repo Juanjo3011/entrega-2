@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:'Ubuntu', sans-serif;
+}
 
 /*------Header------*/
 
@@ -17,6 +20,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
     }
 
 
@@ -126,6 +130,8 @@ main section{
 
 .categoria div h3{
     margin-bottom: 10px;
+    font-size: 20px;
+    margin:14px;
 }
 
 .categoria .muebles{
@@ -163,13 +169,15 @@ main section{
 
 .productos div a{
     text-decoration: none;
-    color: white;
+    color: rgb(253, 250, 250);
     background-color: black;
     padding: 10px;
 }
 
 .productos div h3{
-    margin-bottom: 15px;
+    margin-bottom: 9px;
+    font-size: 20px;
+    margin: 17px;
 }
 
 .historia{
@@ -198,10 +206,31 @@ main section{
     margin: 10px;
 }
 
+.grid-galeria{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    gap: 15px;
+ }
 
-/*------Footer------*/
+.grid-item{
+    box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.75);
+    position: relative;
+    
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-style: groove;
+}
+    /*------Footer------*/
 footer p{
-    font-size: 20px;
+    font-size: 20px; 
 }
 footer div{
     margin: 10px;
@@ -219,10 +248,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:#d0f5a7
 }
-footer{
-    background-color:#d0f5a7 ;
-}
+
 
 
 @media screen and (max-width:700px){
@@ -231,6 +259,10 @@ footer{
     }
     footer p{
         font-size: 15px;
+    }
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
     }
 }
 
@@ -242,8 +274,20 @@ footer{
         font-size: 26px;
     }
 }
+
+@media screen and (max-width:550px){
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+    }
+} 
+
+
 @media screen and (max-width:450px){
     header {
         flex-direction: column;
     }
+    
 }
+
+
