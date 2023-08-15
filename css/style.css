@@ -63,7 +63,7 @@ header nav ul li a{
 .hero{
     margin: 0px;
     padding: 100px;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: bolder;
     background-image: url(../img/hero-b.jpg);
     background-position: center;
@@ -82,7 +82,7 @@ header nav ul li a{
     color: white;
     background-color: black;
     border: 2px white dotted;
-    font-size: 38px;
+    font-size: 40px;
     margin: 20px;
     
 }
@@ -100,7 +100,7 @@ header nav ul li a{
 
 .hero p{
     background-color: rgba(243, 236, 233, 0.534);
-
+    font-size: 100px;
 }
 
 main{
@@ -194,6 +194,7 @@ main section{
 }
 
 
+
 .trabajo{
     display: flex;
     margin: 20px;
@@ -206,6 +207,10 @@ main section{
     margin: 10px;
 }
 
+.trabajo img{
+    height: 600px;
+    width: 850px;
+}
 .grid-galeria{
     margin-top: 30px;
     width: 100%;
