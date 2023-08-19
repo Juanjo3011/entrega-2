@@ -37,6 +37,24 @@
     }
 }
 
+
+/*hover*/
+
+.botone {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #b32a2a;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+.botone:hover {
+    width: 260px;
+}
+
 main {
     background-color: #A8C686;
 }
@@ -185,8 +203,8 @@ main {
 
 .fotito {
     img {
-        width: 600px;
-        height: 300px;
+        width: 400px;
+        height: 350px;
     }
 }
 
@@ -209,3 +227,20 @@ main {
 }
 
 
+.trabajo {
+    img {
+        display: flex;
+        height: 300px;
+        width: 296px;
+        flex-wrap: wrap;
+    }
+}
+
+.sucursal {
+    img {
+        height: 300px;
+        width: 296px;
+
+    }
+
+}
