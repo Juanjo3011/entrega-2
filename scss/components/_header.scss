@@ -1,5 +1,5 @@
 header {
-    background-color: #6d8552;
+    background-color: $color-primario;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -8,6 +8,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    
+    h1 a{
+        text-decoration: none;
+        color: $color-10;
+}
 
     nav {
 
@@ -22,7 +27,7 @@ header {
 
                 a {
                     text-decoration: overline;
-                    color: #F4E8C1;
+                    color: $color-terciario;
                     font-size: 12.6px;
 
                 }

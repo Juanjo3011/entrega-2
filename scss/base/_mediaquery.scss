@@ -1,36 +1,81 @@
-@media screen and (max-width:700px){
-    footer{
-        flex-direction: column;
-    }
-    footer p{
-        font-size: 15px;
-    }
-    .grid-galeria{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-    }
-}
-
-@media screen and (max-width:650px){
-    .hero h2{
-        font-size: 30px;
-    } 
-    .hero p{
-        font-size: 26px;
-    }
-}
-
-@media screen and (max-width:550px){
-    .grid-galeria{
+@media screen and (max-width:1000px){
+    .fotito{
         grid-template-columns: 1fr;
         grid-auto-rows: 300px;
     }
-} 
+}
 
 
-@media screen and (max-width:450px){
+
+
+
+
+
+@media screen and (max-width:700px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .sucursal img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 26px;
+    }
+    .comprar h2 {
+        font-size: 25px;
+    }
+
+    .comprar h3 {
+        font-size: 20px;
+    }
+    .historia h2{
+        font-size: 20px;
+    }
+    .historia p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+    }
+    .fotito{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+}
+   
+
+
+
+
+@media screen and (max-width:450px) {
     header {
         flex-direction: column;
     }
-    
+
+    .plata h2{
+        font-size: 20px;
+    }
+
 }
